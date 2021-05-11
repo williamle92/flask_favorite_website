@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+<h1 class="text-center"> Favorite Books</h1>
+<ol>
+    {% for fav in favorites|sort %}
+    <li class= 'list-group-item'>{{ fav|title }}</li>
+    {% endfor  %}
+</ol>
+
+{% endblock content %} 
